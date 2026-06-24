@@ -1,0 +1,43 @@
+---
+---
+<nav class="sticky top-0 z-50 bg-white border-b border-[#E5E7EB]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex-shrink-0 flex items-center gap-2">
+        <a href="/" class="flex items-center gap-2">
+          <span class="text-[#F59E0B] text-xl">&#9888;</span>
+          <span class="text-[#1A1A1A] font-bold text-xl tracking-tight">WarningLightMeaning</span>
+        </a>
+      </div>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="/warning-lights/" class="text-sm font-medium text-[#1A1A1A] hover:text-[#F59E0B] transition-colors">Browse by Light</a>
+        <a href="/makes/" class="text-sm font-medium text-[#1A1A1A] hover:text-[#F59E0B] transition-colors">Browse by Make</a>
+        <a href="/about/" class="text-sm font-medium text-[#1A1A1A] hover:text-[#F59E0B] transition-colors">About</a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-toggle" type="button" class="text-[#1A1A1A] hover:text-[#F59E0B] focus:outline-none" aria-label="Toggle menu">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="mobile-menu" class="hidden md:hidden border-t border-[#E5E7EB] bg-white px-4 pt-2 pb-4 space-y-1">
+    <a href="/warning-lights/" class="block px-3 py-2 rounded-md text-base font-medium text-[#1A1A1A] hover:text-[#F59E0B] hover:bg-gray-50 transition-colors">Browse by Light</a>
+    <a href="/makes/" class="block px-3 py-2 rounded-md text-base font-medium text-[#1A1A1A] hover:text-[#F59E0B] hover:bg-gray-50 transition-colors">Browse by Make</a>
+    <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-[#1A1A1A] hover:text-[#F59E0B] hover:bg-gray-50 transition-colors">About</a>
+  </div>
+</nav>
+
+<script>
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  
+  if (toggleBtn && menu) {
+    toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  }
+</script>

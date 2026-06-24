@@ -1,17 +1,320 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout 
+  title="Car Dashboard Warning Light Meanings Explained | WarningLightMeaning.com"
+  description="Instantly understand any car dashboard warning light. Every symbol explained clearly — what it means, if it's safe to drive, and exactly what to do."
+  canonical="https://warninglightmeaning.com/"
+>
+  <!-- SECTION 1: HERO -->
+  <section class="w-full bg-white text-center py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-xs font-semibold uppercase tracking-widest text-[#F59E0B] mb-4">
+        FREE &middot; ALL CAR MAKES &middot; UPDATED 2025
+      </div>
+      <h1 class="text-5xl font-bold text-[#1A1A1A] leading-tight max-w-3xl mx-auto mb-6">
+        What Does That Warning Light Mean?
+      </h1>
+      <p class="text-lg text-[#6B7280] max-w-2xl mx-auto mb-10">
+        Every dashboard symbol explained in plain English — so you know exactly what to do, right now.
+      </p>
+      
+      <div class="max-w-2xl mx-auto">
+        <div class="flex items-center border-2 border-[#F59E0B] rounded-full px-4 py-3 bg-white shadow-sm focus-within:ring-2 focus-within:ring-[#F59E0B] focus-within:ring-opacity-50 transition-all">
+          <svg class="w-5 h-5 text-[#6B7280]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <input type="text" placeholder="Search a warning light or car make..." class="flex-1 outline-none text-base px-3 placeholder-[#9CA3AF]" />
+          <button class="bg-[#F59E0B] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#D97706] transition-colors">
+            Search
+          </button>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4 text-sm text-[#6B7280] flex items-center justify-center gap-2 flex-wrap">
+        <span>Popular:</span>
+        <a href="/lights/check-engine/" class="hover:text-[#F59E0B] transition-colors">Check Engine</a> &middot;
+        <a href="/lights/tire-pressure/" class="hover:text-[#F59E0B] transition-colors">Tire Pressure</a> &middot;
+        <a href="/lights/battery/" class="hover:text-[#F59E0B] transition-colors">Battery</a> &middot;
+        <a href="/lights/abs/" class="hover:text-[#F59E0B] transition-colors">ABS</a> &middot;
+        <a href="/lights/airbag/" class="hover:text-[#F59E0B] transition-colors">Airbag</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: BROWSE BY LIGHT COLOR -->
+  <section class="bg-white py-16 border-t border-[#E5E7EB] px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-[#6B7280] mb-8 text-center">
+        BROWSE BY LIGHT COLOR
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        
+        <a href="/colors/red/" class="group bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:border-[#EF4444] hover:shadow-md transition-all cursor-pointer block">
+          <div class="w-16 h-16 rounded-full mx-auto mb-4 bg-[#EF4444]"></div>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#EF4444] transition-colors">Red</h3>
+          <p class="text-xs text-[#6B7280] mt-1">Stop Immediately</p>
+        </a>
+
+        <a href="/colors/amber/" class="group bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:border-[#F59E0B] hover:shadow-md transition-all cursor-pointer block">
+          <div class="w-16 h-16 rounded-full mx-auto mb-4 bg-[#F59E0B]"></div>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Amber</h3>
+          <p class="text-xs text-[#6B7280] mt-1">Check Soon</p>
+        </a>
+
+        <a href="/colors/yellow/" class="group bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:border-[#EAB308] hover:shadow-md transition-all cursor-pointer block">
+          <div class="w-16 h-16 rounded-full mx-auto mb-4 bg-[#EAB308]"></div>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#EAB308] transition-colors">Yellow</h3>
+          <p class="text-xs text-[#6B7280] mt-1">Attention Needed</p>
+        </a>
+
+        <a href="/colors/green/" class="group bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:border-[#10B981] hover:shadow-md transition-all cursor-pointer block">
+          <div class="w-16 h-16 rounded-full mx-auto mb-4 bg-[#10B981]"></div>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#10B981] transition-colors">Green</h3>
+          <p class="text-xs text-[#6B7280] mt-1">System Active</p>
+        </a>
+
+        <a href="/colors/blue/" class="group bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:border-[#3B82F6] hover:shadow-md transition-all cursor-pointer block">
+          <div class="w-16 h-16 rounded-full mx-auto mb-4 bg-[#3B82F6]"></div>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#3B82F6] transition-colors">Blue</h3>
+          <p class="text-xs text-[#6B7280] mt-1">Information</p>
+        </a>
+
+        <a href="/colors/white/" class="group bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:border-gray-400 hover:shadow-md transition-all cursor-pointer block">
+          <div class="w-16 h-16 rounded-full mx-auto mb-4 bg-white border-2 border-[#E5E7EB] group-hover:border-gray-400 transition-all"></div>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm transition-colors">White</h3>
+          <p class="text-xs text-[#6B7280] mt-1">Status Only</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: MOST SEARCHED WARNING LIGHTS -->
+  <section class="bg-[#F9FAFB] py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center mb-8">
+        <h2 class="text-xs font-semibold uppercase tracking-widest text-[#6B7280] border-l-4 border-[#F59E0B] pl-4">
+          MOST SEARCHED WARNING LIGHTS
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        
+        <a href="/lights/check-engine/" class="bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:shadow-md hover:border-[#F59E0B] transition-all cursor-pointer block group">
+          <svg class="w-12 h-12 stroke-[#1A1A1A] fill-none group-hover:stroke-[#F59E0B] transition-colors" stroke-width="1.5" viewBox="0 0 24 24"><path d="M18.9 9.5a2 2 0 0 0-2-2H7.1a2 2 0 0 0-2 2v6.5a2 2 0 0 0 2 2h9.8a2 2 0 0 0 2-2V9.5z"/><path d="M4.5 12h-2M21.5 12h-2M13.5 18v2M10.5 18v2M9.5 7v-1.5M14.5 7v-1.5"/></svg>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm mt-3">Check Engine Light</h3>
+          <span class="rounded-full text-xs font-semibold px-3 py-1 bg-[#F59E0B] text-white mt-3">Check Soon</span>
+        </a>
+
+        <a href="/lights/tire-pressure/" class="bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:shadow-md hover:border-[#F59E0B] transition-all cursor-pointer block group">
+          <svg class="w-12 h-12 stroke-[#1A1A1A] fill-none group-hover:stroke-[#F59E0B] transition-colors" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 8v4M12 16h.01"/><path d="M5.5 18l1.5-1M18.5 18l-1.5-1M2 12h2M20 12h2"/></svg>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm mt-3">Tire Pressure Light</h3>
+          <span class="rounded-full text-xs font-semibold px-3 py-1 bg-[#F59E0B] text-white mt-3">Check Soon</span>
+        </a>
+
+        <a href="/lights/battery/" class="bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:shadow-md hover:border-[#F59E0B] transition-all cursor-pointer block group">
+          <svg class="w-12 h-12 stroke-[#1A1A1A] fill-none group-hover:stroke-[#EF4444] transition-colors" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8z"/><path d="M8 12h2M14 12h2M15 11v2M6 6v-1M18 6v-1"/></svg>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm mt-3">Battery Warning</h3>
+          <span class="rounded-full text-xs font-semibold px-3 py-1 bg-[#EF4444] text-white mt-3">Stop Now</span>
+        </a>
+
+        <a href="/lights/oil-pressure/" class="bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:shadow-md hover:border-[#F59E0B] transition-all cursor-pointer block group">
+          <svg class="w-12 h-12 stroke-[#1A1A1A] fill-none group-hover:stroke-[#EF4444] transition-colors" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 12a5.5 5.5 0 0 1-10.82 1.41C7.79 12.8 6.75 12 5.5 12H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h1.5c1.25 0 2.29-.8 2.68-1.41A5.5 5.5 0 0 1 19 8c2.21 0 4 1.79 4 4s-1.79 4-4 4zM19 14v4M12 14v3a2 2 0 0 1-4 0v-2"/><path d="M19 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm mt-3">Oil Pressure Light</h3>
+          <span class="rounded-full text-xs font-semibold px-3 py-1 bg-[#EF4444] text-white mt-3">Stop Now</span>
+        </a>
+
+        <a href="/lights/abs/" class="bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:shadow-md hover:border-[#F59E0B] transition-all cursor-pointer block group">
+          <svg class="w-12 h-12 stroke-[#1A1A1A] fill-none group-hover:stroke-[#F59E0B] transition-colors" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6" stroke-dasharray="2 3"/><path d="M10 14V10l4 4V10"/><path d="M3 12h2M19 12h2M12 3v2M12 19v2"/></svg>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm mt-3">ABS Warning</h3>
+          <span class="rounded-full text-xs font-semibold px-3 py-1 bg-[#F59E0B] text-white mt-3">Check Soon</span>
+        </a>
+
+        <a href="/lights/airbag/" class="bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:shadow-md hover:border-[#F59E0B] transition-all cursor-pointer block group">
+          <svg class="w-12 h-12 stroke-[#1A1A1A] fill-none group-hover:stroke-[#F59E0B] transition-colors" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M7 16h10a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2z"/></svg>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm mt-3">Airbag Warning</h3>
+          <span class="rounded-full text-xs font-semibold px-3 py-1 bg-[#F59E0B] text-white mt-3">Check Soon</span>
+        </a>
+
+        <a href="/lights/traction-control/" class="bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:shadow-md hover:border-[#F59E0B] transition-all cursor-pointer block group">
+          <svg class="w-12 h-12 stroke-[#1A1A1A] fill-none group-hover:stroke-[#F59E0B] transition-colors" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 19l4-14h8l4 14"/><path d="M6 14h12M8 9h8"/><path d="M6 19s2-2 4-2c3 0 2 2 4 2 3 0 2-2 4-2"/></svg>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm mt-3">Traction Control</h3>
+          <span class="rounded-full text-xs font-semibold px-3 py-1 bg-[#6B7280] text-white mt-3">Info</span>
+        </a>
+
+        <a href="/lights/brake-warning/" class="bg-white border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center text-center hover:shadow-md hover:border-[#F59E0B] transition-all cursor-pointer block group">
+          <svg class="w-12 h-12 stroke-[#1A1A1A] fill-none group-hover:stroke-[#EF4444] transition-colors" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/><path d="M4 12c0-3 1-5 2-6M20 12c0-3-1-5-2-6M4 12c0 3 1 5 2 6M20 12c0 3-1 5-2 6"/></svg>
+          <h3 class="font-semibold text-[#1A1A1A] text-sm mt-3">Brake Warning</h3>
+          <span class="rounded-full text-xs font-semibold px-3 py-1 bg-[#EF4444] text-white mt-3">Stop Now</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: BROWSE BY CAR MAKE -->
+  <section class="bg-white py-16 border-t border-[#E5E7EB] px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-xs font-semibold uppercase tracking-widest text-[#6B7280]">
+          BROWSE BY CAR MAKE
+        </h2>
+        <a href="/makes/" class="text-sm text-[#F59E0B] hover:text-[#D97706] transition-colors">
+          View all makes &rarr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <a href="/makes/toyota/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Toyota</h3>
+            <p class="text-xs text-[#6B7280]">42 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+        
+        <a href="/makes/ford/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Ford</h3>
+            <p class="text-xs text-[#6B7280]">38 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/honda/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Honda</h3>
+            <p class="text-xs text-[#6B7280]">35 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/chevrolet/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Chevrolet</h3>
+            <p class="text-xs text-[#6B7280]">40 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/bmw/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">BMW</h3>
+            <p class="text-xs text-[#6B7280]">52 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/mercedes-benz/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Mercedes-Benz</h3>
+            <p class="text-xs text-[#6B7280]">55 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/nissan/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Nissan</h3>
+            <p class="text-xs text-[#6B7280]">34 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/hyundai/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Hyundai</h3>
+            <p class="text-xs text-[#6B7280]">31 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/kia/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Kia</h3>
+            <p class="text-xs text-[#6B7280]">28 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/subaru/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Subaru</h3>
+            <p class="text-xs text-[#6B7280]">31 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/mazda/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Mazda</h3>
+            <p class="text-xs text-[#6B7280]">27 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/volkswagen/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Volkswagen</h3>
+            <p class="text-xs text-[#6B7280]">44 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/jeep/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Jeep</h3>
+            <p class="text-xs text-[#6B7280]">36 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/audi/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Audi</h3>
+            <p class="text-xs text-[#6B7280]">48 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/ram/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">Ram</h3>
+            <p class="text-xs text-[#6B7280]">33 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+        <a href="/makes/gmc/" class="bg-white border border-[#E5E7EB] rounded-xl p-5 flex items-center justify-between hover:border-l-4 hover:border-l-[#F59E0B] hover:shadow-md transition-all cursor-pointer group block">
+          <div>
+            <h3 class="font-semibold text-[#1A1A1A] text-sm group-hover:text-[#F59E0B] transition-colors">GMC</h3>
+            <p class="text-xs text-[#6B7280]">29 warning lights explained</p>
+          </div>
+          <span class="text-[#6B7280] group-hover:text-[#F59E0B] transition-colors">&rsaquo;</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: TRUST STRIP -->
+  <section class="bg-[#F9FAFB] py-12 border-t border-[#E5E7EB]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-3xl font-bold text-[#F59E0B]">50+</div>
+          <div class="text-sm text-[#6B7280] mt-1">Warning Lights Explained</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-[#F59E0B]">20+</div>
+          <div class="text-sm text-[#6B7280] mt-1">Car Makes Covered</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-[#F59E0B]">100%</div>
+          <div class="text-sm text-[#6B7280] mt-1">Free — Always</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
