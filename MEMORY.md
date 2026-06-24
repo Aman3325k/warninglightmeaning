@@ -19,6 +19,8 @@
 - [x] ROUTES.md created
 - [x] ERRORS.md created
 - [x] GEMINI.md created
+- [x] frontend-design skill installed at .agents/skills/frontend-design
+- [x] webapp-testing skill installed at .agents/skills/webapp-testing
 
 ## What Is NOT Built Yet
 - Homepage
