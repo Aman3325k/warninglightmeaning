@@ -1,0 +1,37 @@
+# ROUTES.md — URL Structure for warninglightmeaning.com
+
+## Rules
+- All URLs lowercase, hyphenated, no underscores
+- All URLs end with trailing slash (Cloudflare Pages requirement)
+- Never create a URL not listed here without updating this file first
+
+## URL Map
+
+| URL | Astro File | Template Type |
+|-----|-----------|---------------|
+| / | src/pages/index.astro | Homepage |
+| /warning-lights/ | src/pages/warning-lights/index.astro | Lights index |
+| /lights/[slug]/ | src/pages/lights/[slug].astro | Light detail |
+| /makes/ | src/pages/makes/index.astro | Makes index |
+| /makes/[make]/ | src/pages/makes/[make]/index.astro | Make detail |
+| /makes/[make]/[light]/ | src/pages/makes/[make]/[light].astro | Make+light |
+| /about/ | src/pages/about.astro | Static page |
+| /privacy-policy/ | src/pages/privacy-policy.astro | Static page |
+| /terms/ | src/pages/terms.astro | Static page |
+| /contact/ | src/pages/contact.astro | Static page |
+
+## Component Files
+src/components/Navigation.astro
+src/components/Footer.astro
+src/components/UrgencyBadge.astro
+src/components/LightCard.astro
+src/components/MakeCard.astro
+src/components/Sidebar.astro
+src/components/AdUnit.astro
+src/layouts/Layout.astro
+
+## Static Files
+public/robots.txt
+public/sitemap.xml
+public/_headers
+public/favicon.svg
