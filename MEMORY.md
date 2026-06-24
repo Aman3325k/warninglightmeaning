@@ -1,12 +1,12 @@
 # MEMORY.md — Project State for warninglightmeaning.com
 
 ## Project Status
-- Phase: 1 — Initialization
+- Phase: 3 — Homepage Build
 - Last updated: June 25, 2026
 - Domain: warninglightmeaning.com (purchased: NO)
 - Cloudflare Pages: NOT DEPLOYED YET
 - GitHub repo: https://github.com/Aman3325k/warninglightmeaning.git
-- Git commit hash: 7fdb4f8
+- Git commit hash: 7794e17
 
 ## What Is Built
 - [x] Astro project initialized
@@ -21,14 +21,15 @@
 - [x] GEMINI.md created
 - [x] frontend-design skill installed at .agents/skills/frontend-design
 - [x] webapp-testing skill installed at .agents/skills/webapp-testing
+- [x] Layout.astro created
+- [x] Navigation.astro created
+- [x] Footer.astro created
+- [x] Homepage (index.astro) built
 
 ## What Is NOT Built Yet
-- Homepage
 - Warning light detail pages
 - Browse by Make pages
 - Legal pages
-- Navigation component
-- Footer component
 - sitemap.xml
 - robots.txt
 - _headers file
