@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import AdUnit from '../../components/AdUnit.astro';
+
+const makes = [
+  'Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan',
+  'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen',
+  'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'
+];
+
+function makeSlug(make: string) {
+  return make.toLowerCase().replace(/[\s-]+/g, '-').replace(/[^a-z0-9-]/g, '');
+}
+
+const title = 'Dashboard Warning Lights by Car Make | WarningLightMeaning.com';
+const description = 'Browse dashboard warning lights by car make. Toyota, Ford, Honda, BMW and more — find exactly what your warning light means for your car.';
+---
+
+<Layout title={title} description={description}>
+  <main class="max-w-5xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold text-gray-900 mb-2">Warning Lights by Car Make</h1>
+    <p class="text-gray-600 mb-8 text-lg">Select your car brand to see warning lights explained specifically for your vehicle.</p>
+
+    <AdUnit />
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6">
+      {makes.map(make => (
+        <a
+          href={`/makes/${makeSlug(make)}/`}
+          class="bg-white border border-gray-200 rounded-xl p-5 text-center hover:border-amber-400 hover:shadow-md transition-all group"
+        >
+          <div class="text-3xl mb-2">🚗</div>
+          <div class="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors text-sm">{make}</div>
+        </a>
+      ))}
+    </div>
+  </main>
+</Layout>
