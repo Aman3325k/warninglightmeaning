@@ -1,55 +1,51 @@
 # TASKS.md — Task Queue for warninglightmeaning.com
 
 ## Current Task
-PHASE 1 — Project Initialization
+PHASE 6 — Technical SEO
 
 ## Task Queue (in strict order)
 
 ### ✅ Phase 1 — Setup
-- [ ] Initialize Astro project
-- [ ] Install Tailwind CSS v4
-- [ ] Create all 7 brain files
-- [ ] Create GitHub repo
-- [ ] First git commit and push
+- [x] Initialize Astro project
+- [x] Install Tailwind CSS v4
+- [x] Create all 7 brain files
+- [x] Create GitHub repo
+- [x] First git commit and push
 
-### 🔲 Phase 2 — Stitch Design
-- [ ] Generate homepage design in Stitch
-- [ ] Generate light detail page design in Stitch
-- [ ] Generate browse by make page design in Stitch
-- [ ] Screenshot all 3 designs
+### ✅ Phase 2 — Stitch Design
+- [x] Homepage design completed (built directly in Astro)
 
-### 🔲 Phase 3 — Core Components
-- [ ] Create Layout.astro (nav + footer + meta)
-- [ ] Create Navigation.astro component
-- [ ] Create Footer.astro component
-- [ ] Create UrgencyBadge.astro component
-- [ ] Create LightCard.astro component
-- [ ] Create MakeCard.astro component
-- [ ] Create Sidebar.astro component
-- [ ] Create AdUnit.astro component
+### ✅ Phase 3 — Core Components
+- [x] Create Layout.astro (nav + footer + meta + favicon + head slot)
+- [x] Create Navigation.astro component
+- [x] Create Footer.astro component
+- [x] Create UrgencyBadge.astro component
+- [x] Create LightCard.astro component
+- [x] Create AdUnit.astro component
+- [ ] Create MakeCard.astro component (not yet built — not blocking)
+- [ ] Create Sidebar.astro component (not yet built — not blocking)
 
-### 🔲 Phase 4 — Pages
-- [ ] Homepage (index.astro)
-- [ ] Warning lights index (/warning-lights/)
-- [ ] 10 priority light pages (see DATA.md)
-- [ ] Browse by Make index (/makes/)
-- [ ] Toyota make page (/makes/toyota/)
-- [ ] Ford make page (/makes/ford/)
+### ✅ Phase 4 — Pages
+- [x] Homepage (index.astro)
+- [x] src/data/lights.ts (10 priority warning lights)
+- [x] Warning lights index (/warning-lights/)
+- [x] Light detail pages — 10 pages (/lights/[slug]/)
+- [x] Browse by Make index (/makes/)
+- [x] Make detail pages — 20 makes (/makes/[make]/)
 
-### 🔲 Phase 5 — Legal Pages
-- [ ] /about
-- [ ] /privacy-policy
-- [ ] /terms
-- [ ] /contact
+### ✅ Phase 5 — Legal Pages
+- [x] /about
+- [x] /privacy-policy
+- [x] /terms
+- [x] /contact
 
-### 🔲 Phase 6 — Technical SEO
-- [ ] robots.txt
-- [ ] sitemap.xml
-- [ ] _headers file (Cloudflare duplicate content fix)
-- [ ] Canonical tags with trailing slash
-- [ ] Meta title + description per page
-- [ ] FAQ schema (FAQPage JSON-LD)
-- [ ] Breadcrumb schema (BreadcrumbList JSON-LD)
+### 🔲 Phase 6 — Technical SEO (CURRENT)
+- [ ] public/robots.txt
+- [ ] public/sitemap.xml
+- [ ] public/_headers file (Cloudflare duplicate content fix)
+- [ ] Verify canonical tags with trailing slash on all pages
+- [ ] FAQ schema (FAQPage JSON-LD) — already done on light detail pages ✅
+- [ ] Breadcrumb schema (BreadcrumbList JSON-LD) — already done on light + make pages ✅
 
 ### 🔲 Phase 7 — Analytics
 - [ ] GA4 tracking setup
