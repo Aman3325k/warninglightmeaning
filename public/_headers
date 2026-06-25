@@ -1,0 +1,11 @@
+# Block Cloudflare Pages preview domain from being indexed
+# Prevents duplicate content penalty vs warninglightmeaning.com
+
+https://*.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+
+https://warninglightmeaning.com/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
