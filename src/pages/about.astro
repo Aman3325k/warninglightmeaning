@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = 'About Us | WarningLightMeaning.com';
+const description = 'WarningLightMeaning.com helps drivers understand dashboard warning lights quickly and clearly — so you know exactly what to do when a light comes on.';
+---
+
+<Layout title={title} description={description}>
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-6">About WarningLightMeaning.com</h1>
+
+    <div class="prose prose-gray max-w-none space-y-6 text-gray-700 leading-relaxed">
+      <p>
+        WarningLightMeaning.com was built for one reason: when a warning light comes on, most drivers have no idea what it means or what to do next. We fix that.
+      </p>
+
+      <p>
+        Every page on this site explains a dashboard warning light in plain English — what it means, how serious it is, what causes it, and exactly what steps to take. No jargon. No upselling. Just clear, accurate information.
+      </p>
+
+      <h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">What We Cover</h2>
+      <ul class="space-y-2 list-none">
+        <li class="flex items-start gap-2"><span class="text-amber-500 mt-1">▸</span> Dashboard warning light meanings for all major car makes</li>
+        <li class="flex items-start gap-2"><span class="text-amber-500 mt-1">▸</span> Urgency levels — Stop Immediately, Check Soon, or Info Only</li>
+        <li class="flex items-start gap-2"><span class="text-amber-500 mt-1">▸</span> Common causes and estimated repair costs</li>
+        <li class="flex items-start gap-2"><span class="text-amber-500 mt-1">▸</span> Step-by-step guidance on what to do</li>
+        <li class="flex items-start gap-2"><span class="text-amber-500 mt-1">▸</span> Whether you can reset the light yourself</li>
+      </ul>
+
+      <h2 class="text-xl font-bold text-gray-900 mt-8 mb-3">Our Commitment</h2>
+      <p>
+        We keep our information accurate, up to date, and free. We cover Toyota, Ford, Honda, Chevrolet, BMW, Nissan, Jeep, Hyundai, Kia, Subaru, Mazda, Volkswagen, Mercedes-Benz, Audi, Ram, GMC, Dodge, Lexus, Volvo, Tesla, and more.
+      </p>
+
+      <p>
+        If you have a question or spot an error, use our <a href="/contact/" class="text-amber-600 hover:text-amber-700 font-medium">contact page</a> to reach us.
+      </p>
+    </div>
+  </main>
+</Layout>
