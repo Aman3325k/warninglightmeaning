@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://warninglightmeaning.com/sitemap.xml
