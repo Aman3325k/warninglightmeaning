@@ -1,7 +1,7 @@
 # TASKS.md — Task Queue for warninglightmeaning.com
 
 ## Current Task
-PHASE 6 — Technical SEO
+PHASE 7 — Analytics
 
 ## Task Queue (in strict order)
 
@@ -27,9 +27,9 @@ PHASE 6 — Technical SEO
 
 ### ✅ Phase 4 — Pages
 - [x] Homepage (index.astro)
-- [x] src/data/lights.ts (10 priority warning lights)
+- [x] src/data/lights.ts (15 priority warning lights)
 - [x] Warning lights index (/warning-lights/)
-- [x] Light detail pages — 10 pages (/lights/[slug]/)
+- [x] Light detail pages — 15 pages (/lights/[slug]/)
 - [x] Browse by Make index (/makes/)
 - [x] Make detail pages — 20 makes (/makes/[make]/)
 
@@ -39,15 +39,15 @@ PHASE 6 — Technical SEO
 - [x] /terms
 - [x] /contact
 
-### 🔲 Phase 6 — Technical SEO (CURRENT)
-- [ ] public/robots.txt
-- [ ] public/sitemap.xml
-- [ ] public/_headers file (Cloudflare duplicate content fix)
-- [ ] Verify canonical tags with trailing slash on all pages
+### ✅ Phase 6 — Technical SEO
+- [x] public/robots.txt
+- [x] public/sitemap.xml
+- [x] public/_headers file (Cloudflare duplicate content fix)
+- [x] Verify canonical tags with trailing slash on all pages
 - [ ] FAQ schema (FAQPage JSON-LD) — already done on light detail pages ✅
 - [ ] Breadcrumb schema (BreadcrumbList JSON-LD) — already done on light + make pages ✅
 
-### 🔲 Phase 7 — Analytics
+### 🔲 Phase 7 — Analytics (CURRENT)
 - [ ] GA4 tracking setup
 - [ ] Microsoft Clarity setup
 - [ ] Cookie consent banner (EU visitors only)

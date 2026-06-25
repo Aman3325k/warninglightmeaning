@@ -1,12 +1,12 @@
 # MEMORY.md — Project State for warninglightmeaning.com
 
 ## Project Status
-- Phase: 6 — Technical SEO (next up)
+- Phase: 7 — Analytics (next up)
 - Last updated: June 25, 2026
 - Domain: warninglightmeaning.com (purchased: NO)
 - Cloudflare Pages: NOT DEPLOYED YET
 - GitHub repo: https://github.com/Aman3325k/warninglightmeaning.git
-- Git commit hash: 16c6efd
+- Git commit hash: 0fbed84
 
 ## What Is Built
 - [x] Astro project initialized
@@ -25,11 +25,11 @@
 - [x] Navigation.astro created
 - [x] Footer.astro created
 - [x] Homepage (index.astro) built
-- [x] src/data/lights.ts created (10 priority warning lights)
+- [x] src/data/lights.ts created (15 priority warning lights)
 - [x] UrgencyBadge.astro component created
 - [x] LightCard.astro component created
 - [x] AdUnit.astro placeholder component created
-- [x] src/pages/lights/[slug].astro — light detail pages (10 pages, FAQ + breadcrumb schema)
+- [x] src/pages/lights/[slug].astro — light detail pages (15 pages, FAQ + breadcrumb schema)
 - [x] src/pages/warning-lights/index.astro — warning lights index
 - [x] src/pages/makes/index.astro — makes index (20 makes)
 - [x] src/pages/makes/[make]/index.astro — make detail pages (20 pages)
@@ -39,14 +39,15 @@
 - [x] src/pages/contact.astro
 - [x] public/favicon.svg — custom amber warning triangle icon
 
+- [x] public/robots.txt
+- [x] public/sitemap.xml
+- [x] public/_headers file (Cloudflare duplicate content fix)
+
 ## Build Status
-- Last build: 37 pages, 0 errors
-- Pages: / + /warning-lights/ + 10 light pages + /makes/ + 20 make pages + 4 legal pages
+- Last build: 42 pages, 0 errors
+- Pages: / + /warning-lights/ + 15 light pages + /makes/ + 20 make pages + 4 legal pages
 
 ## What Is NOT Built Yet
-- robots.txt
-- sitemap.xml
-- _headers file (Cloudflare duplicate content fix)
 - GA4 tracking
 - Microsoft Clarity
 - Cookie consent banner
