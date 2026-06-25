@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Amber circle background -->
+  <circle cx="16" cy="16" r="16" fill="#F59E0B"/>
+  <!-- White exclamation mark triangle (warning symbol) -->
+  <path d="M16 7 L27 25 L5 25 Z" fill="white" stroke="white" stroke-width="0.5"/>
+  <!-- Dark exclamation dot -->
+  <circle cx="16" cy="21.5" r="1.6" fill="#1A1A1A"/>
+  <!-- Dark exclamation stem -->
+  <rect x="14.7" y="13" width="2.6" height="6" rx="1.3" fill="#1A1A1A"/>
+</svg>
