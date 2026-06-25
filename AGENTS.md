@@ -14,7 +14,7 @@
 - NEVER use localStorage or sessionStorage
 - NEVER run git add . — always stage files individually
 - NEVER delete or recreate GA4 properties or streams
-- NEVER modify AGENTS.md, MEMORY.md, TASKS.md without being explicitly told to
+- NEVER modify AGENTS.md, MEMORY.md, TASKS.md without being explicitly told to (BUT ALWAYS ask if they should be updated after completing tasks)
 - NEVER proceed with irreversible actions without confirmation
 - NEVER assume missing information — stop and report back
 - NEVER install packages not listed in TASKS.md
@@ -27,7 +27,7 @@
 - Read DESIGN.md before writing any HTML or CSS
 - Read DATA.md before writing any content
 - Check ERRORS.md before implementing anything — avoid repeat mistakes
-- After completing a task: update MEMORY.md and TASKS.md
+- After completing a task or significant change: remind the user and ask for permission to update MEMORY.md and TASKS.md
 - Commit after every working feature with a clear message
 - Always push: git push origin main after committing
 - Verify Cloudflare deployment before declaring anything done
