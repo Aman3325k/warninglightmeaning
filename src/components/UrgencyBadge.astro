@@ -1,0 +1,18 @@
+---
+interface Props {
+  urgency: 'Stop Immediately' | 'Stop Soon' | 'Check Soon' | 'Info Only';
+}
+const { urgency } = Astro.props;
+
+const config = {
+  'Stop Immediately': { bg: 'bg-red-600', text: 'text-white', dot: 'bg-white' },
+  'Stop Soon': { bg: 'bg-red-500', text: 'text-white', dot: 'bg-white' },
+  'Check Soon': { bg: 'bg-amber-400', text: 'text-gray-900', dot: 'bg-gray-900' },
+  'Info Only': { bg: 'bg-gray-200', text: 'text-gray-700', dot: 'bg-gray-500' },
+};
+const c = config[urgency];
+---
+<span class={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold ${c.bg} ${c.text}`}>
+  <span class={`w-2 h-2 rounded-full ${c.dot}`}></span>
+  {urgency}
+</span>
