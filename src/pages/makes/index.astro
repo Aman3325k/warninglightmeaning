@@ -2,15 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import AdUnit from '../../components/AdUnit.astro';
 
-const makes = [
-  'Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan',
-  'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen',
-  'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'
-];
-
-function makeSlug(make: string) {
-  return make.toLowerCase().replace(/[\s-]+/g, '-').replace(/[^a-z0-9-]/g, '');
-}
+import { makes, makeSlug } from '../../data/makes';
 
 const title = 'Dashboard Warning Lights by Car Make | WarningLightMeaning.com';
 const description = 'Browse dashboard warning lights by car make. Toyota, Ford, Honda, BMW and more — find exactly what your warning light means for your car.';

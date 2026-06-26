@@ -25,14 +25,16 @@
 - [x] Navigation.astro created
 - [x] Footer.astro created
 - [x] Homepage (index.astro) built
-- [x] src/data/lights.ts created (15 priority warning lights)
+- [x] src/data/lights.ts created (17 priority warning lights)
+- [x] src/data/makes.ts created (32 centralized car makes)
 - [x] UrgencyBadge.astro component created
 - [x] LightCard.astro component created
 - [x] AdUnit.astro placeholder component created
-- [x] src/pages/lights/[slug].astro — light detail pages (15 pages, FAQ + breadcrumb schema)
+- [x] src/pages/lights/[slug].astro — light detail pages (17 pages, FAQ + breadcrumb schema)
 - [x] src/pages/warning-lights/index.astro — warning lights index
-- [x] src/pages/makes/index.astro — makes index (20 makes)
-- [x] src/pages/makes/[make]/index.astro — make detail pages (20 pages)
+- [x] src/pages/makes/index.astro — makes index (32 makes)
+- [x] src/pages/makes/[make]/index.astro — make detail pages (32 pages)
+- [x] src/pages/colors/[color]/index.astro — color pages (6 pages)
 - [x] src/pages/about.astro
 - [x] src/pages/privacy-policy.astro
 - [x] src/pages/terms.astro
@@ -44,8 +46,8 @@
 - [x] public/_headers file (Cloudflare duplicate content fix)
 
 ## Build Status
-- Last build: 42 pages, 0 errors
-- Pages: / + /warning-lights/ + 15 light pages + /makes/ + 20 make pages + 4 legal pages
+- Last build: 62 pages, 0 errors
+- Pages: / + /warning-lights/ + 17 light pages + /makes/ + 32 make pages + 6 color pages + 4 legal pages
 
 ## What Is NOT Built Yet
 - GA4 tracking

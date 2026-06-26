@@ -1,3 +1,5 @@
+import { makes } from './makes';
+
 export type Urgency = 'Stop Immediately' | 'Stop Soon' | 'Check Soon' | 'Info Only';
 
 export interface WarningSide {
@@ -47,7 +49,7 @@ export const lights: WarningSide[] = [
     canResetYourself: true,
     resetInstructions: 'Fix the underlying issue first. Then use an OBD2 scanner to clear the code, or disconnect the battery negative terminal for 30 seconds. The light will return if the fault is not fixed.',
     howLongCanDrive: 'If steady light and car drives normally: days to weeks while you arrange a repair. If flashing: stop immediately.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'tire-pressure',
@@ -76,7 +78,7 @@ export const lights: WarningSide[] = [
     canResetYourself: true,
     resetInstructions: 'Inflate all tires to correct PSI. Drive above 25 mph for a few minutes. The light should turn off automatically. Some cars require a manual reset via the TPMS reset button.',
     howLongCanDrive: 'Safely drive a few miles at low speed to add air. Do not drive long distances on a significantly deflated tire.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'battery',
@@ -105,7 +107,7 @@ export const lights: WarningSide[] = [
     canResetYourself: false,
     resetInstructions: 'The light will turn off once the charging system fault is repaired. Do not attempt to reset without fixing the underlying issue.',
     howLongCanDrive: '30–60 minutes maximum. Get off the road immediately.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'oil-pressure',
@@ -136,7 +138,7 @@ export const lights: WarningSide[] = [
     canResetYourself: false,
     resetInstructions: 'Fix the underlying cause. The light will turn off once oil pressure is restored. If it stays on after adding oil, tow the vehicle.',
     howLongCanDrive: 'Zero miles. Stop immediately.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'abs',
@@ -165,7 +167,7 @@ export const lights: WarningSide[] = [
     canResetYourself: false,
     resetInstructions: 'Requires OBD2 scanner with ABS capability to read and clear codes. Fix the fault first or the light returns immediately.',
     howLongCanDrive: 'You can drive normally but avoid hard braking. Repair within a week.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'airbag',
@@ -194,7 +196,7 @@ export const lights: WarningSide[] = [
     canResetYourself: false,
     resetInstructions: 'Requires professional diagnostic equipment. Never attempt DIY airbag work — airbags can deploy with lethal force.',
     howLongCanDrive: 'Can drive but it is a safety risk every trip. Diagnose within days, not weeks.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'engine-temperature',
@@ -226,7 +228,7 @@ export const lights: WarningSide[] = [
     canResetYourself: false,
     resetInstructions: 'The light turns off when the engine returns to safe temperature. If it keeps returning, the underlying cause must be repaired.',
     howLongCanDrive: 'Zero miles. Stop immediately.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'brake-warning',
@@ -256,7 +258,7 @@ export const lights: WarningSide[] = [
     canResetYourself: true,
     resetInstructions: 'If caused by low fluid or parking brake: fix the issue and the light turns off. If caused by a fault code: requires OBD2 scanner to clear after repair.',
     howLongCanDrive: 'If parking brake was the cause and brakes feel normal: fine to drive. Any other cause: do not drive until inspected.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'power-steering',
@@ -285,7 +287,7 @@ export const lights: WarningSide[] = [
     canResetYourself: false,
     resetInstructions: 'Some EPS faults reset on restart. Persistent faults require professional diagnosis and repair.',
     howLongCanDrive: 'Can drive short distances carefully. Do not drive on highways or in situations requiring sharp steering. Repair within days.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'traction-control',
@@ -313,7 +315,7 @@ export const lights: WarningSide[] = [
     canResetYourself: false,
     resetInstructions: 'If manually disabled, press the traction control button to re-enable. For fault codes, requires OBD2 scanner after repair.',
     howLongCanDrive: 'Normal driving is fine. Extra caution on wet or icy roads. Schedule diagnostic within a week if fault-related.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'service-engine-soon',
@@ -342,7 +344,7 @@ export const lights: WarningSide[] = [
     canResetYourself: true,
     resetInstructions: 'After completing the required service, most cars reset automatically. Some require a manual reset via the instrument cluster menu or by holding the trip reset button during ignition. Check your owner\'s manual for the exact procedure.',
     howLongCanDrive: 'Weeks to a month is generally fine. Do not defer indefinitely — missed oil changes cause engine wear.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'transmission-temperature',
@@ -374,7 +376,7 @@ export const lights: WarningSide[] = [
     canResetYourself: false,
     resetInstructions: 'The light turns off once the transmission returns to safe temperature. If it keeps returning, the underlying cause must be diagnosed and repaired by a professional.',
     howLongCanDrive: 'Zero miles. Stop immediately.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'fuel-low',
@@ -399,7 +401,7 @@ export const lights: WarningSide[] = [
     canResetYourself: true,
     resetInstructions: 'The light turns off automatically once you refuel above the threshold level.',
     howLongCanDrive: '30–50 miles typically. Varies significantly by vehicle, speed, and driving conditions. Do not push your luck.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'door-ajar',
@@ -429,7 +431,7 @@ export const lights: WarningSide[] = [
     canResetYourself: true,
     resetInstructions: 'Properly close all doors, hood, and trunk. The light turns off automatically when all latches are engaged.',
     howLongCanDrive: 'Do not drive until the open door is identified and closed. An unlatched door is a serious safety hazard.',
-    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+    makes,
   },
   {
     slug: 'seatbelt',
@@ -455,6 +457,54 @@ export const lights: WarningSide[] = [
     canResetYourself: true,
     resetInstructions: 'Fasten all seatbelts. The light and chime turn off automatically.',
     howLongCanDrive: 'Fasten your seatbelt before moving the vehicle. No exceptions.',
+    makes,
+  },
+  {
+    slug: 'high-beams',
+    name: 'High Beam Indicator',
+    color: 'Blue',
+    urgency: 'Info Only',
+    symbol: '💡',
+    shortDesc: 'Your headlights are on high beam.',
+    fullDesc: 'The blue high beam indicator simply tells you that your headlights are currently set to high beam (brights). This is completely normal when driving on dark roads, but you should dim them to low beams when approaching other vehicles to avoid blinding oncoming drivers.',
+    safeToDrive: 'Yes. This is a normal status indicator, not a warning.',
+    causes: [
+      'High beams manually switched on',
+      'Auto-high beam system activated them on a dark road',
+      'Accidentally bumped the turn signal stalk forward'
+    ],
+    whatToDo: [
+      'Turn them off when within 500 feet of an oncoming vehicle',
+      'Turn them off when following another vehicle closely',
+      'Use them on dark, unlit roads to increase visibility'
+    ],
+    estimatedCost: 'Free — just normal operation.',
+    canResetYourself: true,
+    resetInstructions: 'Pull or push the headlight stalk (usually the left stalk) to switch back to low beams.',
+    howLongCanDrive: 'Drive normally. Just be courteous to other drivers.',
     makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
   },
+  {
+    slug: 'cruise-control',
+    name: 'Cruise Control Active',
+    color: 'Green',
+    urgency: 'Info Only',
+    symbol: '⏱️',
+    shortDesc: 'Your cruise control system is currently engaged.',
+    fullDesc: 'A green cruise control icon (often shaped like a speedometer with an arrow) means the system is turned on and a speed has been set. The car will maintain this speed automatically. If the icon is amber/yellow, it usually means the system is turned on but not currently engaged/set.',
+    safeToDrive: 'Yes. This is a normal status indicator indicating an active feature.',
+    causes: [
+      'Driver turned on and set the cruise control system'
+    ],
+    whatToDo: [
+      'Keep your feet near the pedals to take over if needed',
+      'Stay alert, especially if you do not have adaptive cruise control',
+      'To disengage, lightly tap the brakes or press the cancel button on your steering wheel'
+    ],
+    estimatedCost: 'Free — normal operation.',
+    canResetYourself: true,
+    resetInstructions: 'Turn off the system using the steering wheel controls, or tap the brakes to pause it.',
+    howLongCanDrive: 'Drive normally.',
+    makes: ['Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan', 'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'],
+  }
 ];

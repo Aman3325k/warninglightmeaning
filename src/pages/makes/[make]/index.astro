@@ -4,25 +4,9 @@ import LightCard from '../../../components/LightCard.astro';
 import AdUnit from '../../../components/AdUnit.astro';
 import { lights } from '../../../data/lights';
 
-const makes = [
-  'Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan',
-  'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen',
-  'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'
-];
-
-function makeSlug(make: string) {
-  return make.toLowerCase().replace(/[\s-]+/g, '-').replace(/[^a-z0-9-]/g, '');
-}
+import { makes, makeSlug } from '../../../data/makes';
 
 export function getStaticPaths() {
-  const makes = [
-    'Toyota', 'Ford', 'Honda', 'Chevrolet', 'BMW', 'Nissan',
-    'Jeep', 'Hyundai', 'Kia', 'Subaru', 'Mazda', 'Volkswagen',
-    'Mercedes-Benz', 'Audi', 'Ram', 'GMC', 'Dodge', 'Lexus', 'Volvo', 'Tesla'
-  ];
-  function makeSlug(make: string) {
-    return make.toLowerCase().replace(/[\s-]+/g, '-').replace(/[^a-z0-9-]/g, '');
-  }
   return makes.map(make => ({
     params: { make: makeSlug(make) },
     props: { makeName: make }
@@ -47,7 +31,7 @@ const description = `Every ${makeName} dashboard warning light explained clearly
 ---
 
 <Layout title={title} description={description}>
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} slot="head" />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} slot="head" />
 
   <nav class="max-w-5xl mx-auto px-4 pt-6 pb-2 text-sm text-gray-500">
     <ol class="flex items-center gap-2">
