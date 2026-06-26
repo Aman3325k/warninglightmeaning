@@ -1,7 +1,7 @@
 # TASKS.md — Task Queue for warninglightmeaning.com
 
 ## Current Task
-PHASE 7 — Analytics
+PHASE 8 — Deploy
 
 ## Task Queue (in strict order)
 
@@ -27,11 +27,13 @@ PHASE 7 — Analytics
 
 ### ✅ Phase 4 — Pages
 - [x] Homepage (index.astro)
-- [x] src/data/lights.ts (15 priority warning lights)
+- [x] src/data/lights.ts (17 priority warning lights)
 - [x] Warning lights index (/warning-lights/)
-- [x] Light detail pages — 15 pages (/lights/[slug]/)
+- [x] Light detail pages — 17 pages (/lights/[slug]/)
 - [x] Browse by Make index (/makes/)
-- [x] Make detail pages — 20 makes (/makes/[make]/)
+- [x] Make detail pages — 32 makes (/makes/[make]/)
+- [x] Colors index pages — 6 colors (/colors/[color]/)
+- [x] Custom 404 page (404.astro)
 
 ### ✅ Phase 5 — Legal Pages
 - [x] /about
@@ -39,21 +41,23 @@ PHASE 7 — Analytics
 - [x] /terms
 - [x] /contact
 
-### ✅ Phase 6 — Technical SEO
-- [x] public/robots.txt
-- [x] public/sitemap.xml
-- [x] public/_headers file (Cloudflare duplicate content fix)
-- [x] Verify canonical tags with trailing slash on all pages
-- [ ] FAQ schema (FAQPage JSON-LD) — already done on light detail pages ✅
-- [ ] Breadcrumb schema (BreadcrumbList JSON-LD) — already done on light + make pages ✅
+### ✅ Phase 6 — Technical SEO & Pre-Launch
+- [x] public/robots.txt (linked to dynamic sitemap)
+- [x] Install @astrojs/sitemap and remove hardcoded public/sitemap.xml
+- [x] public/_headers file (Cloudflare duplicate content fix with exact subdomain)
+- [x] Verify canonical tags and og:url on all pages
+- [x] Favicon audit (amber triangle)
+- [x] FAQ schema (FAQPage JSON-LD) — done on light detail pages
+- [x] Breadcrumb schema (BreadcrumbList JSON-LD) — done on light + make pages
 
-### 🔲 Phase 7 — Analytics (CURRENT)
+### 🔲 Phase 7 — Analytics
 - [ ] GA4 tracking setup
 - [ ] Microsoft Clarity setup
 - [ ] Cookie consent banner (EU visitors only)
 
-### 🔲 Phase 8 — Deploy
-- [ ] Create Cloudflare Pages project
+### 🔲 Phase 8 — Deploy (CURRENT)
+- [ ] Update Formspree ID in contact.astro
+- [ ] Create Cloudflare Pages project (warninglightmeaning.pages.dev)
 - [ ] Connect GitHub repo
 - [ ] Verify live deployment
 - [ ] Submit to Google Search Console

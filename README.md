@@ -1,29 +1,28 @@
-# Astro Starter Kit: Minimal
+# WarningLightMeaning.com
 
-```sh
-npm create astro@latest -- --template minimal
-```
+A comprehensive, SEO-optimized directory of car dashboard warning lights built with Astro.js and Tailwind CSS.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Tech Stack
 
-## 🚀 Project Structure
+- **Framework**: Astro (Static Site Generation)
+- **Styling**: Tailwind CSS v4
+- **Hosting**: Cloudflare Pages
+- **Forms**: Formspree
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Project Structure
 
 ```text
 /
-├── public/
+├── public/              # Static assets (robots.txt, _headers, favicon)
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/      # Reusable UI components (Navigation, Footer, Cards)
+│   ├── data/            # Source of truth for content (lights.ts, makes.ts)
+│   ├── layouts/         # Page layouts (Layout.astro)
+│   ├── pages/           # File-based routing (pages, categories, lights)
+│   └── styles/          # Global styles (Tailwind config)
+├── astro.config.mjs     # Astro configuration (@astrojs/sitemap)
+└── package.json         # Dependencies
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -35,9 +34,14 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npx astro check`         | Run diagnostic checks across the codebase        |
 
-## 👀 Want to learn more?
+## 📝 Pre-Launch Checklist Status
+- 100% Mobile Responsive
+- Dynamic XML Sitemap configured
+- Canonical URLs & OG Tags implemented
+- Cloudflare `.pages.dev` noindex headers applied
+- 404 Custom Page built
+- JSON-LD structured data (FAQ, Breadcrumbs) added
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Next step: Deploy to Cloudflare Pages!
