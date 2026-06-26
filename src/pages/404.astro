@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = 'Page Not Found | WarningLightMeaning.com';
+const description = 'The page you are looking for does not exist. Return to the homepage to find dashboard warning light meanings.';
+---
+
+<Layout title={title} description={description}>
+  <main class="max-w-2xl mx-auto px-4 py-24 text-center">
+    <div class="text-[#F59E0B] text-6xl mb-6">&#9888;</div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">404 - Page Not Found</h1>
+    <p class="text-xl text-gray-600 mb-8">Oops! We couldn't find the page you were looking for.</p>
+    
+    <div class="space-x-4">
+      <a href="/" class="inline-block bg-[#F59E0B] hover:bg-[#D97706] text-white font-bold py-3 px-6 rounded-lg transition-colors">
+        Go to Homepage
+      </a>
+      <a href="/warning-lights/" class="inline-block bg-white hover:bg-gray-50 text-[#1A1A1A] border border-gray-300 font-bold py-3 px-6 rounded-lg transition-colors">
+        Browse Warning Lights
+      </a>
+    </div>
+  </main>
+</Layout>

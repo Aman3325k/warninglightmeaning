@@ -8,6 +8,7 @@ interface Props {
 }
 
 const { title, description, canonical } = Astro.props;
+const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site);
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
@@ -24,7 +25,7 @@ import Footer from '../components/Footer.astro';
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>{title}</title>
     <meta name="description" content={description}>
-    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="canonical" href={canonicalURL} />
     <meta property="og:title" content={title}>
     <meta property="og:description" content={description}>
     <meta property="og:type" content="website">
